@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MindSpace</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+
+    <header class="header">
+      <div>
+        <h1>MindSpace</h1>
+        <p>Your thoughts, beautifully organized.</p>
+      </div>
+      <button id="themeToggle" aria-label="Toggle theme">🌙</button>
+    </header>
+
+    <section class="stats">
+      <div class="card">
+        <h3>Efficiency</h3>
+        <span id="efficiency">0%</span>
+        <div class="progress-bar">
+          <div id="progress"></div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Status</h3>
+        <p id="statusText">0 of 0 Tasks Done</p>
+      </div>
+    </section>
+
+    <input 
+      type="text" 
+      id="taskInput" 
+      placeholder="Capture a thought..." 
+      aria-label="Task input"
+    />
+
+    <div class="filters">
+      <button class="filter active" data-filter="all">All</button>
+      <button class="filter" data-filter="active">Active</button>
+      <button class="filter" data-filter="completed">Completed</button>
+    </div>
+
+    <ul id="taskList"></ul>
+
+    <button id="clearCompleted">Clear Completed</button>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
