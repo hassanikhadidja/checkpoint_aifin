@@ -83,6 +83,7 @@ MindSpace/
 Clone or download the repository:
 
 git clone https://github.com/hassanikhadidja/checkpoint_aifin.git
+
 Open the project folder.
 
 Open index.html in your browser:
